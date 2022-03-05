@@ -1,5 +1,5 @@
 %% Vasiloiu Tudor Florian 331 AC
-%% a) Decimarea inseamna reducerea frecventei de esantionare cu un factor M
+%% a)
 lungime = 20;
 suport_A = 0:0.1:lungime;
 semnal = sin(suport_A);
