@@ -52,8 +52,8 @@ saveas(gcf, 'Pas_3_a.jpg');
 load('xilo.mat')
 
 % 2/3
-N = 20;
-M = 30;
+N = 2;
+M = 3;
 A = [1 1 0 0];
 P = max( [N,M] );
 F = [0 0.9*pi/P 1.1*pi/P 1];
@@ -61,8 +61,8 @@ h = firpm(29,F,A);
 xilo_2_3 = upfirdn(yx, h, N, M);
 
 % 1/2
-N = 10;
-M = 20;
+N = 1;
+M = 2;
 A = [1 1 0 0];
 P = max( [N,M] );
 F = [0 0.9*pi/P 1.1*pi/P 1];
@@ -71,8 +71,8 @@ xilo_1_2 = upfirdn(yx, h, N, M);
 
 % 1/4
 
-N = 10;
-M = 40;
+N = 1;
+M = 4;
 A = [1 1 0 0];
 P = max( [N,M] );
 F = [0 0.9*pi/P 1.1*pi/P 1];
@@ -81,7 +81,7 @@ xilo_1_4 = upfirdn(yx, h, N, M);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-figure(2);
+figure('XILO');
 subplot(4,1,1);
 plot(yx);
 title('Semnal xilo');
